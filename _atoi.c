@@ -1,3 +1,4 @@
+#include "shell.h"
 
 /**
  * interactive - intr mode
