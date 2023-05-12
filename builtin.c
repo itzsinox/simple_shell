@@ -9,7 +9,7 @@ int _myhelp(info_t *info)
 {
 	char **arg_arr;
 
-	arg_arr = info->argy;
+	arg_arr = info->arg;
 	_puts("help call works. Function not yet implemented \n");
 	if (0)
 		_puts(*arg_arr); /*temp att_unused workaround */
