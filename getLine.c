@@ -5,6 +5,7 @@
     * @sig_num: signal number
     * Return: void
 */
+
 void sigintHandler(__attribute__((unused))int sig_num)
 {
 

@@ -125,6 +125,7 @@ int write_history(info_t *info)
     * @linecount: history line count
     * Return: 0
 */
+
 int build_history_list(info_t *info, char *buf, int linecount)
 {
 	list_t *node = NULL;

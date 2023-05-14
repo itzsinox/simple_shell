@@ -10,7 +10,6 @@ int interactive(info_t *info)
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
 
-
 /**
  * _isalpha - to check alpha
  * @c: car input

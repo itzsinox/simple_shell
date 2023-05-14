@@ -6,6 +6,7 @@
 *@c: char
 *Return: ptr
 */
+
 char *_strchr(char *s, char c)
 {
 	do {
