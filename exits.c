@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
-**_strchr – locate char in str
-*@s: str
-*@c: char
-*Return: ptr
+* *_strchr - locate char in str
+* @s: str
+* @c: char
+* Return: ptr
 */
 
 char *_strchr(char *s, char c)
@@ -18,11 +18,11 @@ char *_strchr(char *s, char c)
 }
 
 /**
-**_strncpy – copie str
-*@dest: str destination
-*@src: str source
-*@n: amount of chars
-*Return: concat str
+* *_strncpy - copie str
+* @dest: str destination
+* @src: str source
+* @n: amount of chars
+* Return: concat str
 */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -48,11 +48,11 @@ char *_strncpy(char *dest, char *src, int n)
 }
 
 /**
-**_strncat – concat 2 str
-*@dest: 1st str
-*@src: 2nd str
-*@n: amount of bytes
-*Return: concat str
+* *_strncat - concat 2 str
+* @dest: 1st str
+* @src: 2nd str
+* @n: amount of bytes
+* Return: concat str
 */
 char *_strncat(char *dest, char *src, int n)
 {

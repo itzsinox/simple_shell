@@ -19,7 +19,7 @@ int renumber_history(info_t *info)
 }
 
 /**
-    * get_history_file – history file
+    * get_history_file - history file
     * @info: parameter struct
     * Return: allocated str
 */
@@ -75,7 +75,7 @@ int read_history(info_t *info)
 		return (free(buf), 0);
 	close(fd);
 	for (i = 0; i < fsize; i++)
-	if (buf[i] == '\n')
+		if (buf[i] == '\n')
 		{
 			buf[i] = 0;
 			build_history_list(info, buf + last, linecount++);
@@ -87,7 +87,8 @@ int read_history(info_t *info)
 	info->histcount = linecount;
 	while (info->histcount-- >= HIST_MAX)
 		delete_node_at_index(&(info->history), 0);
-	renumber_history(info); return (info->histcount);
+	renumber_history(info);
+	return (info->histcount);
 }
 
 /**

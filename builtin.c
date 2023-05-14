@@ -10,7 +10,7 @@ int _myhelp(info_t *info)
 {
 	char **arg_arr;
 
-	arg_arr = info->arg;
+	arg_arr = info->argv;
 	_puts("help call works. Function not yet implemented \n");
 	if (0)
 		_puts(*arg_arr); /*temp att_unused workaround */
@@ -62,8 +62,7 @@ int _mycd(info_t *info)
 	{
 		d = _getenv(info, "HOME=");
 		if (!d)
-			cd_ret = /* TODO:what should this be? */
-				chdir((d = _getenv(info, "PWD=")) ? d : "/");
+			cd_ret = chdir((d = _getenv(info, "PWD=")) ? d : "/");
 		else
 			cd_ret = chdir(d);
 	}
@@ -76,8 +75,7 @@ int _mycd(info_t *info)
 			return (1);
 		}
 		_puts(_getenv(info, "OLDPWD=")), _putchar('\n');
-		cd_ret = /* TODO: what should this be? */
-			chdir((d = _getenv(info, "OLDPWD=")) ? d : "/");
+		cd_ret = chdir((d = _getenv(info, "OLDPWD=")) ? d : "/");
 	}
 	else
 		cd_ret = chdir(info->argv[1]);

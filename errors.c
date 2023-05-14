@@ -21,9 +21,9 @@ int _eputchar(char c)
 }
 
 /**
-    * _eputs - input str
-    * @str: str
-    * Return: Nothing
+ * _eputs - input str
+ * @str: str
+ * Return: Nothing
 */
 
 void _eputs(char *str)
@@ -40,10 +40,10 @@ void _eputs(char *str)
 }
 
 /**
-    * _putfd – write character c
-    * @c: char
-    * @fd: file descriptor
-    * Return: 1 or -1
+ * _putfd - write character c
+ * @c: char
+ * @fd: file descriptor
+ * Return: 1 or -1
 */
 int _putfd(char c, int fd)
 {
@@ -61,10 +61,10 @@ int _putfd(char c, int fd)
 }
 
 /**
-    * _putsfd – print str
-    * @str: str
-    * @fd: file descriptor
-    * Return: num of chars
+ * _putsfd - print str
+ * @str: str
+ * @fd: file descriptor
+ * Return: num of chars
 */
 
 int _putsfd(char *str, int fd)

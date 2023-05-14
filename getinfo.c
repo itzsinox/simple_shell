@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
-    * set_info – set info
-    * @info: struct address
-    * @av: argument vector
+ * set_info - set info
+ * @info: struct address
+ * @av: argument vector
 */
 
 void set_info(info_t *info, char **av)
@@ -33,8 +33,8 @@ void set_info(info_t *info, char **av)
 }
 
 /**
-    * clear_info - clear info
-    * @info: info
+ * clear_info - clear info
+ * @info: info
 */
 void clear_info(info_t *info)
 {
@@ -45,11 +45,11 @@ void clear_info(info_t *info)
 }
 
 /**
-    * _setenv - Initialize new env
-    * @info: Structure
-    * @var: str env var
-    * @value: str env var value
-    * Return: 0
+ * _setenv - Initialize new env
+ * @info: Structure
+ * @var: str env var
+ * @value: str env var value
+ * Return: 0
 */
 int _setenv(info_t *info, char *var, char *value)
 {
@@ -86,9 +86,9 @@ int _setenv(info_t *info, char *var, char *value)
 }
 
 /**
-    * free_info - frees info
-    * @info: struct address
-    * @all: freeing all fields
+ * ffree_info - frees info
+ * @info: struct address
+ * @all: freeing all fields
 */
 void ffree_info(info_t *info, int all)
 {

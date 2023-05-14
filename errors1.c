@@ -18,7 +18,7 @@ void print_error(info_t *info, char *estr)
 }
 
 /**
-    * _erratoi – convert str to int
+    * _erratoi -convert str to int
     * @s: str
     * Return: 0 or -1
 */
@@ -28,7 +28,7 @@ int _erratoi(char *s)
 	unsigned long int result = 0;
 
 	if (*s == '+')
-		s++; /* TODO: why does this make main return 255? */
+		s++;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
@@ -79,24 +79,24 @@ char *convert_number(long int num, int base, int flags)
 }
 
 /**
-    * print_d - function prints dec base 10
-    * @input: input
-    * @fd: file descriptor
-    * Return: num
+ * print_d - function prints dec base 10
+ * @input: input
+ * @fd: file descriptor
+ * Return: num
 */
 
 int print_d(int input, int fd)
 {
-	int (*putchar)(char) = _putchar;
+	int (*__putchar)(char) = _putchar;
 	int i, count = 0;
 	unsigned int _abs_, current;
 
 	if (fd == STDERR_FILENO)
-	    _putchar = _eputchar;
+		__putchar = _eputchar;
 	if (input < 0)
 	{
 		_abs_ = -input;
-		_putchar('-');
+		__putchar('-');
 		count++;
 	}
 	else
@@ -106,19 +106,19 @@ int print_d(int input, int fd)
 	{
 		if (_abs_ / i)
 		{
-			_putchar('0' + current / i);
+			__putchar('0' + current / i);
 			count++;
 		}
 		current %= i;
 	}
-	_putchar('0' + current);
+	__putchar('0' + current);
 	count++;
 
 	return (count);
 }
 
 /**
-    * remove_comments – remove comm
+    * remove_comments - remove comm
     * @buf: address of str
     * Return: 0
 */
