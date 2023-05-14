@@ -86,11 +86,11 @@ int _setenv(info_t *info, char *var, char *value)
 }
 
 /**
- * ffree_info - frees info
+ * free_info - frees info
  * @info: struct address
  * @all: freeing all fields
 */
-void ffree_info(info_t *info, int all)
+void free_info(info_t *info, int all)
 {
 	free(info->argv);
 	info->argv = NULL;

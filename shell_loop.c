@@ -1,6 +1,48 @@
 #include "shell.h"
 
 /**
+ * hsh - main shell loop
+ * @info: info
+ * @av: arg vect
+ * Return: 0 or 1 or error
+ */
+int hsh(info_t *info, char **av)
+{
+	ssize_t r = 0;
+	int buil_ret = 0;
+
+	while (r != -1 && buil_ret != -2)
+	{
+		clear_info(info);
+		if (interactive(info))
+			_puts("$ ");
+		_eputchar(BUF_FLUSH);
+		r = get_input(info);
+		if (r != -1)
+		{
+			set_info(info, av);
+			buil_ret = find_builtin(info);
+			if (buil_ret == -1)
+				find_cmd(info);
+		}
+		else if (interactive(info))
+			_putchar('\n');
+		free_info(info, 0);
+	}
+	write_history(info);
+	free_info(info, 1);
+	if (!interactive(info) && info->status)
+		exit(info->status);
+	if (buil_ret == -2)
+	{
+		if (info->err_num == -1)
+			exit(info->status);
+		exit(info->err_num);
+	}
+	return (buil_ret);
+}
+
+/**
  * find_builtin - find builtin com
  * @info: info
  * Return: -1, 0, 1 or 2
@@ -27,47 +69,6 @@ int find_builtin(info_t *info)
 			buil_ret = butab[i].func(info);
 			break;
 		}
-	return (buil_ret);
-}
-
-/**
- * hsh - main shell loop
- * @info: info
- * @av: arg vect
- * Return: 0 or 1 or error
- */
-int hsh(info_t *info, char **av)
-{
-	ssize_t r = 0;
-	int buil_ret = 0;
-
-	do {
-		clear_info(info);
-		if (interactive(info))
-			_puts("$ ");
-		_eputchar(BUF_FLUSH);
-		r = get_input(info);
-		if (r != -1)
-		{
-			set_info(info, av);
-			buil_ret = find_builtin(info);
-			if (buil_ret == -1)
-				find_cmd(info);
-		}
-		else if (interactive(info))
-			_putchar('\n');
-		free_info(info, 0);
-	} while (r != -1 && buil_ret != -2);
-	write_history(info);
-	free_info(info, 1);
-	if (!interactive(info) && info->status)
-		exit(info->status);
-	if (buil_ret == -2)
-	{
-		if (info->err_num == -1)
-			exit(info->status);
-		exit(info->err_num);
-	}
 	return (buil_ret);
 }
 

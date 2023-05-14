@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
-    * _eputchar - writes char c
-    * @c: char
-    * Return: 1 or -1
+ * _eputchar - writes char c
+ * @c: char
+ * Return: 1 or -1
 */
 int _eputchar(char c)
 {
