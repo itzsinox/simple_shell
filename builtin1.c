@@ -24,9 +24,9 @@ int unset_alias(info_t *info, char *str)
 }
 
 /**
-    * _myhistory – to display the history list
-    * @info: Structure
-    * Return: 0
+ * _myhistory - to display the history list
+ * @info: Structure
+ * Return: 0
 */
 int _myhistory(info_t *info)
 {
@@ -35,9 +35,9 @@ int _myhistory(info_t *info)
 }
 
 /**
-    * print_alias – print string
-    * @node: node
-    * Return: 0 or 1
+ * print_alias - print string
+ * @node: node
+ * Return: 0 or 1
 */
 int print_alias(list_t *node)
 {
@@ -57,10 +57,10 @@ return (1);
 }
 
 /**
-    * set_alias – set string
-    * @info: struct
-    * @str: str
-    * Return: 0 or 1
+ * set_alias - set string
+ * @info: struct
+ * @str: str
+ * Return: 0 or 1
 */
 int set_alias(info_t *info, char *str)
 {
