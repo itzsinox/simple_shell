@@ -44,28 +44,28 @@ int is_delim(char c, char *delim)
  */
 int _atoi(char *s)
 {
-	int i, sg = 1, f = 0, op;
-	unsigned int res = 0;
+	int i, sign = 1, flag = 0, output;
+	unsigned int result = 0;
 
-	for (i = 0; s[i] != '\0' && f != 2; i++)
+	for (i = 0; s[i] != '\0' && flag != 2; i++)
 	{
 		if (s[i] == '-')
-			sg *= -1;
+			sign *= -1;
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			f = 1;
-			res *= 10;
-			res += (s[i] - '0');
+			flag = 1;
+			result *= 10;
+			result += (s[i] - '0');
 		}
-		else if (f == 1)
-			f = 2;
+		else if (flag == 1)
+			flag = 2;
 	}
 
-	if (sg == -1)
-		op = -res;
+	if (sign == -1)
+		output = -result;
 	else
-		op = res;
+		output = result;
 
-	return (op);
+	return (output);
 }

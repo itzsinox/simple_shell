@@ -27,13 +27,13 @@ int _strcmp(char *s1, char *s2)
  */
 int _strlen(char *s)
 {
-	int x = 0;
+	int i = 0;
 
 	if (!s)
 		return (0);
 	while (*s++)
-		x++;
-	return (x);
+		i++;
+	return (i);
 }
 
 /**
@@ -44,14 +44,14 @@ int _strlen(char *s)
  */
 char *_strcat(char *dest, char *src)
 {
-	char *r = dest;
+	char *ret = dest;
 
 	while (*dest)
 		dest++;
 	while (*src)
 		*dest++ = *src++;
 	*dest = *src;
-	return (r);
+	return (ret);
 }
 
 /**
