@@ -6,6 +6,7 @@
  * @d: delim str
  * Return: ptr
  */
+
 char **strtow(char *str, char *d)
 {
 	int x, y, z, m, num = 0;

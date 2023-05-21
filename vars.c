@@ -9,6 +9,7 @@
  * @len: len
  * Return: void
  */
+
 void check_chain(info_t *info, char *buf,
 		size_t *p, size_t i, size_t len)
 {
