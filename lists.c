@@ -7,6 +7,7 @@
  * @num: node idx
  * Return: size
  */
+
 list_t *add_node_end(list_t **head, const char *str, int num)
 {
 	list_t *new_node, *node;
