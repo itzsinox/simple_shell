@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* *_strchr - locate char in str
+* _strchr - locate char in str
 * @s: str
 * @c: char
 * Return: ptr
@@ -48,7 +48,7 @@ char *_strncpy(char *dest, char *src, int n)
 }
 
 /**
-* *_strncat - concat 2 str
+* _strncat - concat 2 str
 * @dest: 1st str
 * @src: 2nd str
 * @n: amount of bytes

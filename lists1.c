@@ -7,7 +7,7 @@
  */
 char **list_to_strings(list_t *head)
 {
-	list_t *n = head;
+	list_t *node = head;
 	size_t i = list_len(head), j;
 	char **strs;
 	char *str;
@@ -17,9 +17,9 @@ char **list_to_strings(list_t *head)
 	strs = malloc(sizeof(char *) * (i + 1));
 	if (!strs)
 		return (NULL);
-	for (i = 0; n; n = n->next, i++)
+	for (i = 0; node; node = node->next, i++)
 	{
-		str = malloc(_strlen(n->str) + 1);
+		str = malloc(_strlen(node->str) + 1);
 		if (!str)
 		{
 			for (j = 0; j < i; j++)
@@ -27,7 +27,7 @@ char **list_to_strings(list_t *head)
 			free(strs);
 			return (NULL);
 		}
-		str = _strcpy(str, n->str);
+		str = _strcpy(str, node->str);
 		strs[i] = str;
 	}
 	strs[i] = NULL;

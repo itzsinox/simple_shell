@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
-    * populate_env_list - populates env linked list
-    * @info: Structure
-    * Return: 0
+ * populate_env_list - populates env linked list
+ * @info: Structure
+ * Return: 0
 */
 
 int populate_env_list(info_t *info)
@@ -12,15 +12,15 @@ int populate_env_list(info_t *info)
 	size_t i;
 
 	for (i = 0; environ[i];	i++)
-	add_node_end(&node, environ[i], 0);
+		add_node_end(&node, environ[i], 0);
 	info->env = node;
 	return (0);
 }
 
 /**
-    * _myenv - environment
-    * @info: Structure
-    * Return: 0
+ * _myenv - environment
+ * @info: Structure
+ * Return: 0
 */
 int _myenv(info_t *info)
 {
@@ -29,9 +29,9 @@ int _myenv(info_t *info)
 }
 
 /**
-    * _mysetenv - new environment
-    * @info: Structure
-    * Return: 0
+ * _mysetenv - new environment
+ * @info: Structure
+ * Return: 0
 */
 int _mysetenv(info_t *info)
 {
@@ -46,30 +46,30 @@ int _mysetenv(info_t *info)
 }
 
 /**
-    * _getenv - gets the value
-    * @info: Structure
-    * @name: name
-    * Return: value
+ * _getenv - gets the value
+ * @info: Structure
+ * @name: name
+ * Return: value
 */
 char *_getenv(info_t *info, const char *name)
 {
-	list_t *n = info->env;
+	list_t *node = info->env;
 	char *p;
 
-	while (n)
+	while (node)
 	{
-		p = starts_with(n->str, name);
+		p = starts_with(node->str, name);
 		if (p && *p)
 			return (p);
-		n = n->next;
+		node = node->next;
 	}
 	return (NULL);
 }
 
 /**
-    * _myunsetenv - Remove environment
-    * @info: Structure
-    * Return: 0
+ * _myunsetenv - Remove environment
+ * @info: Structure
+ * Return: 0
 */
 int _myunsetenv(info_t *info)
 {

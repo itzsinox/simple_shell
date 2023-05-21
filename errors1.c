@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
-    * print_error - print error msg
-    * @info: the info
-    * @estr: str
-    * Return: 0 or -1
+ * print_error - print error msg
+ * @info: the info
+ * @estr: str
+ * Return: 0 or -1
 */
 void print_error(info_t *info, char *estr)
 {
@@ -18,9 +18,9 @@ void print_error(info_t *info, char *estr)
 }
 
 /**
-    * _erratoi -convert str to int
-    * @s: str
-    * Return: 0 or -1
+ * _erratoi -convert str to int
+ * @s: str
+ * Return: 0 or -1
 */
 int _erratoi(char *s)
 {
@@ -45,11 +45,11 @@ int _erratoi(char *s)
 }
 
 /**
-    * convert_number - converter function
-    * @num: num
-    * @base: base
-    * @flags: arg flags
-    * Return: str
+ * convert_number - converter function
+ * @num: num
+ * @base: base
+ * @flags: arg flags
+ * Return: str
 */
 char *convert_number(long int num, int base, int flags)
 {
@@ -118,9 +118,9 @@ int print_d(int input, int fd)
 }
 
 /**
-    * remove_comments - remove comm
-    * @buf: address of str
-    * Return: 0
+ * remove_comments - remove comm
+ * @buf: address of str
+ * Return: 0
 */
 void remove_comments(char *buf)
 {
