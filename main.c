@@ -1,5 +1,4 @@
 #include "shell.h"
-#include "mfun.h"
 
 /**
  * node_starts_with - return node

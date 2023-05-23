@@ -63,7 +63,7 @@ char **list_to_strings(list_t *head)
  * @prefix: str
  * @c: next char
  * Return: match node
- */
+ *
 list_t *node_starts_with(list_t *node, char *prefix, char c)
 {
 	char *p = NULL;
@@ -77,6 +77,7 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 	}
 	return (NULL);
 }
+*/
 
 /**
  * get_node_index - get idx
