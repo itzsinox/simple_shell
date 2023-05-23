@@ -1,4 +1,26 @@
 #include "shell.h"
+#include "mfun.h"
+
+/**
+ * node_starts_with - return node
+ * @node: ptr
+ * @prefix: str
+ * @c: next char
+ * Return: match node
+ */
+list_t *node_starts_with(list_t *node, char *prefix, char c)
+{
+	char *p = NULL;
+
+	while (node)
+	{
+		p = starts_with(node->str, prefix);
+		if (p && ((c == -1) || (*p == c)))
+		return (node);
+		node = node->next;
+	}
+	return (NULL);
+}
 
 /**
  * main - ent pt
