@@ -5,6 +5,7 @@
     * @info: info
     * Return: the new hist count
 */
+
 int renumber_history(info_t *info)
 {
 	list_t *node = info->history;

@@ -5,6 +5,7 @@
  * @ptr: ptr address
  * Return: 1 or 0
  */
+
 int bfree(void **ptr)
 {
 	if (ptr && *ptr)

@@ -6,6 +6,7 @@
  * @s2: 2nd str
  * Return: -, + or 0
  */
+
 int _strcmp(char *s1, char *s2)
 {
 	do {

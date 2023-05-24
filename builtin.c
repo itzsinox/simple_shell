@@ -5,6 +5,7 @@
  * @info: Structure
  * Return: 0
  */
+
 int _myhelp(info_t *info)
 {
 	char **arg_array;

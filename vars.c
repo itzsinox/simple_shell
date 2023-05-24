@@ -41,6 +41,7 @@ void check_chain(info_t *info, char *buf,
  * @p: address
  * Return: 1 or 0
  */
+
 int is_chain(info_t *info, char *buf, size_t *p)
 {
 	size_t j = *p;

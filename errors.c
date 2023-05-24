@@ -66,6 +66,7 @@ int _putfd(char c, int fd)
  * @fd: file descriptor
  * Return: num of chars
 */
+
 int _putsfd(char *str, int fd)
 {
 	int i = 0;
