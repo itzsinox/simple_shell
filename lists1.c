@@ -58,7 +58,7 @@ size_t list_len(const list_t *h)
  * @prefix: str
  * @c: next char
  * Return: match node
- *
+ */
 list_t *node_starts_with(list_t *node, char *prefix, char c)
 {
 	char *p = NULL;
@@ -72,7 +72,7 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 	}
 	return (NULL);
 }
-*/
+
 
 /**
  * print_list - print list
