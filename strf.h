@@ -11,7 +11,8 @@ int _strlen(char *s)
 {
 int i = 0;
 if (!s)
-return (0);while (*s++)
+return (0);
+while (*s++)
 i++;
 return (i);
 }
@@ -60,6 +61,7 @@ return ((char *)haystack);
 char *_strcat(char *dest, char *src)
 {
 char *ret = dest;
+
 while (*dest)
 dest++;
 while (*src)
