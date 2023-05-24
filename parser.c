@@ -1,5 +1,27 @@
 #include "shell.h"
+#include "vars.h"
+#include "main.h"
+#include "lists.h"
+#include "lists1.h"
+#include "memory.h"
+#include "realloc.h"
+#include "shell_loop.h"
+#include "string.h"
+#include "string1.h"
+#include "tokenizer.h"
+#include "builtin.h"
+#include "builtin1.h"
+#include "environ.h"
+#include "errors.h"
+#include "errors1.h"
+#include "exits.h"
+#include "getLine.h"
+#include "getenv.h"
+#include "getinfo.h"
+#include "history.h"
+#include "_atoi.h"
 
+/*
 #include "reaf.h"
 #include "shlf.h"
 #include "strf.h"
@@ -21,6 +43,7 @@
 #include "lif1.h"
 #include "memf.h"
 #include "lif.h"
+*/
 
 /**
  * is_cmd - det if file is executable
