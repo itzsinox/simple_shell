@@ -1,5 +1,4 @@
-#ifndef GLF_H
-#define GLF_H
+#include "shell.h"
 
 /**
  * sigintHandler - block ctrl-C
@@ -166,5 +165,3 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	*ptr = p;
 	return (s);
 }
-
-#endif
