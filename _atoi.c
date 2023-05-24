@@ -1,6 +1,29 @@
 #include "shell.h"
 #include "mf.h"
 #include "erf.h"
+
+#include "reaf.h"
+#include "shlf.h"
+#include "strf.h"
+#include "strf1.h"
+#include "tof.h"
+#include "vaf.h"
+#include "buf.h"
+#include "buf1.h"
+#include "enf.h"
+#include "erf.h"
+#include "erf1.h"
+#include "exf.h"
+#include "glf.h"
+#include "gvf.h"
+#include "gif.h"
+#include "hif.h"
+#include "mf.h"
+#include "lif1.h"
+#include "memf.h"
+#include "paf.h"
+#include "lif.h"
+
 /**
  * interactive - returns true if shell is interactive mode
  * @info: struct address
