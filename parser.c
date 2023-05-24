@@ -1,7 +1,4 @@
 #include "shell.h"
-/*
-#include "_atoi.c"
-*/
 /**
  * is_cmd - det if file is executable
  * @info: info struct
