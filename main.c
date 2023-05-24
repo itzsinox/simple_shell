@@ -1,25 +1,27 @@
 #include "shell.h"
 
-/**
- * node_starts_with - return node
- * @node: ptr
- * @prefix: str
- * @c: next char
- * Return: match node
- */
-list_t *node_starts_with(list_t *node, char *prefix, char c)
-{
-	char *p = NULL;
+#include "reaf.h"
+#include "shlf.h"
+#include "strf.h"
+#include "strf1.h"
+#include "tof.h"
+#include "vaf.h"
+#include "buf.h"
+#include "buf1.h"
+#include "enf.h"
+#include "erf.h"
+#include "erf1.h"
+#include "exf.h"
+#include "glf.h"
+#include "gvf.h"
+#include "gif.h"
+#include "hif.h"
+#include "atf.h"
+#include "lif1.h"
+#include "memf.h"
+#include "paf.h"
+#include "lif.h"
 
-	while (node)
-	{
-		p = starts_with(node->str, prefix);
-		if (p && ((c == -1) || (*p == c)))
-		return (node);
-		node = node->next;
-	}
-	return (NULL);
-}
 
 /**
  * main - ent pt
