@@ -5,6 +5,7 @@
     * @info: Structure
     * Return: 0
 */
+
 char **get_environ(info_t *info)
 {
 	if (!info->environ || info->env_changed)

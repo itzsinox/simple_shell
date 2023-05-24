@@ -4,6 +4,7 @@
  * ffree - free str
  * @pp: str of str
  */
+
 void ffree(char **pp)
 {
 	char **a = pp;
