@@ -6,7 +6,6 @@
  * @str: str
  * Return: 0 or 1
  */
-
 int unset_alias(info_t *info, char *str)
 {
 	char *p, c;

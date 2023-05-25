@@ -5,7 +5,6 @@
     * @info: info
     * Return: the new hist count
 */
-
 int renumber_history(info_t *info)
 {
 	list_t *node = info->history;
@@ -24,7 +23,6 @@ int renumber_history(info_t *info)
     * @info: parameter struct
     * Return: allocated str
 */
-
 char *get_history_file(info_t *info)
 {
 	char *buf, *dir;

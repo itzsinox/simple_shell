@@ -5,7 +5,6 @@
  * @info: Structure
  * Return: 0
 */
-
 int populate_env_list(info_t *info)
 {
 	list_t *node = NULL;

@@ -84,7 +84,6 @@ char *convert_number(long int num, int base, int flags)
  * @fd: file descriptor
  * Return: num
 */
-
 int print_d(int input, int fd)
 {
 	int (*__putchar)(char) = _putchar;
